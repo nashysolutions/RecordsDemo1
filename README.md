@@ -11,4 +11,4 @@ Either install [Sourcery](https://github.com/krzysztofzablocki/Sourcery) or just
 
 ### Sourcery
 
-This project includes a [template file](https://github.com/nashysolutions/RecordsDemo/blob/master/Sourcery/Templates/ManagedObject.Query.stencil) which you will need to copy, when configuring Sourcery in your project.
+This project includes a [template file](https://github.com/nashysolutions/RecordsDemo1/blob/master/Performances/Database/Stencils/ManagedObjectQuery.stencil) which you will need to copy, when configuring Sourcery in your project.
