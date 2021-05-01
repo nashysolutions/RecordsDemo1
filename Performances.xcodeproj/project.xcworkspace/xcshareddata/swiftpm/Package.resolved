@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Dequeue",
+        "repositoryURL": "https://github.com/nashysolutions/Dequeue.git",
+        "state": {
+          "branch": null,
+          "revision": "af25489b6c479d44d6cc513828d3ae01e25e8f17",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "Records",
+        "repositoryURL": "https://github.com/nashysolutions/Records.git",
+        "state": {
+          "branch": null,
+          "revision": "e62bf4a0c07facacf49323dcf30baa6a6e9956ab",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

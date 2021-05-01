@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="35K-F6-waF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="kWv-MU-bsA">
+            <objects>
+                <viewController id="86O-gA-Kdt" customClass="RootViewController" customModule="Performances" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WBO-Dc-D8j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monster" translatesAutoresizingMaskIntoConstraints="NO" id="b1y-hC-hQU">
+                                <rect key="frame" x="104" y="260" width="167" height="167"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.71764705880000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b1y-hC-hQU" firstAttribute="centerY" secondItem="Qpc-Jd-I7V" secondAttribute="centerY" id="aqW-k7-90k"/>
+                            <constraint firstItem="b1y-hC-hQU" firstAttribute="centerX" secondItem="Qpc-Jd-I7V" secondAttribute="centerX" id="oIN-oK-ows"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qpc-Jd-I7V"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jqe-Ry-OoO"/>
+                    <connections>
+                        <outlet property="monsterImageView" destination="b1y-hC-hQU" id="zV3-DN-JkA"/>
+                        <segue destination="ZC5-pb-S7D" kind="show" identifier="Show" id="sSj-r4-Bkf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cP8-0G-ldK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754.39999999999998" y="-952.17391304347836"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G81-EI-5wy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="35K-F6-waF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j4o-5z-20E">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="U7d-wz-qt4" id="wOl-qr-xP5"/>
+                        <segue destination="86O-gA-Kdt" kind="relationship" relationship="rootViewController" id="YhZ-cW-p29"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39O-Ia-Xgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="U7d-wz-qt4" customClass="RootNavigationControllerDelegate" customModule="Performances" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-1695.2" y="-952.17391304347836"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="OuI-lw-Kdc">
+            <objects>
+                <viewController id="ZC5-pb-S7D" customClass="WelcomeViewController" customModule="Performances" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="heq-Ag-fOx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKQ-8L-gJg">
+                                <rect key="frame" x="20" y="147.5" width="335" height="372.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events Manager" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovj-RE-70U">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="36"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="monster" translatesAutoresizingMaskIntoConstraints="NO" id="GCa-WJ-DY2">
+                                        <rect key="frame" x="0.0" y="53" width="335" height="167"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A database of registered performances" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyO-8t-jeF">
+                                        <rect key="frame" x="0.0" y="237" width="335" height="71.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQH-eU-9jt">
+                                        <rect key="frame" x="0.0" y="325.5" width="335" height="47"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchButtonPressed:" destination="ZC5-pb-S7D" eventType="touchUpInside" id="oIE-60-466"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.71764705880000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mDf-pV-X6L" firstAttribute="trailing" secondItem="PKQ-8L-gJg" secondAttribute="trailing" constant="20" id="5ft-fB-z6u"/>
+                            <constraint firstItem="PKQ-8L-gJg" firstAttribute="leading" secondItem="mDf-pV-X6L" secondAttribute="leading" constant="20" id="FO4-5b-4n4"/>
+                            <constraint firstItem="PKQ-8L-gJg" firstAttribute="centerY" secondItem="heq-Ag-fOx" secondAttribute="centerY" id="yXn-OZ-rJ2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mDf-pV-X6L"/>
+                    </view>
+                    <connections>
+                        <outlet property="monsterImageView" destination="GCa-WJ-DY2" id="MpH-qo-5rV"/>
+                        <outlet property="stackView" destination="PKQ-8L-gJg" id="5ZF-er-L5v"/>
+                        <segue destination="Q9x-c3-9h3" kind="show" identifier="Show" id="w5J-rG-YdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7A-2v-Ipd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="-952"/>
+        </scene>
+        <!--Promotion View Controller-->
+        <scene sceneID="oxF-1p-YyI">
+            <objects>
+                <viewController id="Q9x-c3-9h3" customClass="PromotionViewController" customModule="Performances" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h9U-4U-hRV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="sLi-H8-t9z">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_record" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-9q-1J6">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="5Jh-Qx-4vb"/>
+                                            <constraint firstAttribute="width" secondItem="XaP-9q-1J6" secondAttribute="height" multiplier="1:1" id="xiz-Ok-6Ry"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrI-OG-dKz">
+                                        <rect key="frame" x="-8" y="0.0" width="216.5" height="0.0"/>
+                                        <string key="text">Implemented with
+Records</string>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sLi-H8-t9z" firstAttribute="centerX" secondItem="h9U-4U-hRV" secondAttribute="centerX" id="JJB-Wk-ASr"/>
+                            <constraint firstItem="sLi-H8-t9z" firstAttribute="centerY" secondItem="h9U-4U-hRV" secondAttribute="centerY" id="PE4-Zu-Svs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HoZ-XW-r1u"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="onp-Eo-pZh"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="OrI-OG-dKz" id="45Y-Uq-FZE"/>
+                        <outlet property="stackView" destination="sLi-H8-t9z" id="41I-cJ-n3v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vh5-Rh-urG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-952"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="_record" width="294" height="294"/>
+        <image name="monster" width="167" height="167"/>
+    </resources>
+</document>
