@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		500C47FC263D520F005C094F /* Records in Frameworks */ = {isa = PBXBuildFile; productRef = 500C47FB263D520F005C094F /* Records */; };
+		500C4846263D6949005C094F /* Records in Frameworks */ = {isa = PBXBuildFile; productRef = 500C4845263D6949005C094F /* Records */; };
 		5029101822D4830D009D8654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5029101722D4830D009D8654 /* AppDelegate.swift */; };
 		5029101D22D4830D009D8654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029101B22D4830D009D8654 /* Main.storyboard */; };
 		5029101F22D4830E009D8654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5029101E22D4830E009D8654 /* Assets.xcassets */; };
@@ -165,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50E0C60A2610758D0097C903 /* Dequeue in Frameworks */,
-				500C47FC263D520F005C094F /* Records in Frameworks */,
+				500C4846263D6949005C094F /* Records in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +471,7 @@
 			name = Performances;
 			packageProductDependencies = (
 				50E0C6092610758D0097C903 /* Dequeue */,
-				500C47FB263D520F005C094F /* Records */,
+				500C4845263D6949005C094F /* Records */,
 			);
 			productName = Performances;
 			productReference = 5029101422D4830D009D8654 /* Performances.app */;
@@ -503,7 +503,7 @@
 			mainGroup = 5029100B22D4830D009D8654;
 			packageReferences = (
 				50E0C6082610758D0097C903 /* XCRemoteSwiftPackageReference "Dequeue" */,
-				500C47FA263D520F005C094F /* XCRemoteSwiftPackageReference "Records" */,
+				500C4844263D6949005C094F /* XCRemoteSwiftPackageReference "Records" */,
 			);
 			productRefGroup = 5029101522D4830D009D8654 /* Products */;
 			projectDirPath = "";
@@ -823,7 +823,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		500C47FA263D520F005C094F /* XCRemoteSwiftPackageReference "Records" */ = {
+		500C4844263D6949005C094F /* XCRemoteSwiftPackageReference "Records" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nashysolutions/Records.git";
 			requirement = {
@@ -842,9 +842,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		500C47FB263D520F005C094F /* Records */ = {
+		500C4845263D6949005C094F /* Records */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 500C47FA263D520F005C094F /* XCRemoteSwiftPackageReference "Records" */;
+			package = 500C4844263D6949005C094F /* XCRemoteSwiftPackageReference "Records" */;
 			productName = Records;
 		};
 		50E0C6092610758D0097C903 /* Dequeue */ = {
